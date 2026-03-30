@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(68, 0, 255);
+}
+
+main {
+    display: flex;
+    flex-direction: column ;
+    min-height: 90vh;
+    flex: 1;
+}
+
+#cartao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: greenyellow;
+
+    margin: 100px;
+    border: 10px solid rgb(0, 0, 0);
+}
+
+img {
+    width: 30%;
+    
+}
+.img {
+    border-radius: 50%;
+}
+header, footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
