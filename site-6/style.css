@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    padding: 0 10px 10px;
+}
