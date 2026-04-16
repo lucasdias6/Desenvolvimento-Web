@@ -1,0 +1,16 @@
+/* Crie uma div blue; 50x50
+e posicione ela a 0 px da margen direita e 0 px da margem inferior */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.azul {
+    position: relative;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+}
