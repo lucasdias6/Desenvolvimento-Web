@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    text-align: center;
+}
+
+form {
+    background-color: aqua;
+}
