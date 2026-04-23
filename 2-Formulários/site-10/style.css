@@ -7,10 +7,12 @@ e posicione ela a 0 px da margen direita e 0 px da margem inferior */
 }
 
 .azul {
-    position: relative;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    width: 150px;
+    height: 150px;
+    
     background-color: blue;
-    width: 50px;
-    height: 50px;
-    right: 0;
-    bottom: 0;
 }
