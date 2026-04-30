@@ -10,11 +10,7 @@ body {
   flex-direction: column;
   min-height: 90vh; /* garante altura da tela */
 }
-header{
-    text-align: center;
-    font-size: 32px;
-    color: red;
-}
+
 /* 3. Main ocupa o espaço livre */
 main {
   flex: 1;
@@ -22,8 +18,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
+
 /* Estética */
 header, footer {
   background: #333;

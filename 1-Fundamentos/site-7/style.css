@@ -1,6 +1,8 @@
+/* Isso é um comentário */
 * {
     margin: 0;
     padding: 0;
+
 }
 
 section {
@@ -10,11 +12,12 @@ section {
     padding: 50px;
 }
 
+
 div {
     width: 150px;
-    border: 10px solid greenyellow;
+    border: 10px solid green;
     padding: 70px 10px;
-    margin: 40px auto;
+    margin: 40px auto ;
     text-align: center;
     background-color: beige;
 }

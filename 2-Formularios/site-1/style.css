@@ -3,10 +3,12 @@
     padding: 0;
 }
 
-#titulo {
+h2 {
     text-align: center;
 }
 
-form {
+form{
     background-color: aqua;
+    margin: 20px;
+    padding: 10px;
 }

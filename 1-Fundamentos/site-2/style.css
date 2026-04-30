@@ -10,19 +10,18 @@ body {
   flex-direction: column;
   min-height: 90vh; /* garante altura da tela */
 }
-header{
-    text-align: center;
-    font-size: 32px;
-    color: red;
-}
+
 /* 3. Main ocupa o espaço livre */
 main {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 iframe {
-    width: 100%;
-    height: 100%;
+  width: 75%;
+  height: 75%;
 }
 
 /* Estética */
