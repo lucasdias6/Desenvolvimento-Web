@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+#top-right {
+    top: 40px;
+    right: 40px;
+
+    border: 3px solid rgb(38, 0, 255);
+    box-shadow: 0 0 20px rgb(98, 0, 255);
+
+    transition: rotate 0.7s, background-color 0.7s, border-color 0.7s;
+}
+
+#top-left {
+    top: 40px;
+    left: 40px;
+    
+    border: 3px solid rgb(138, 4, 4);
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+    
+    transition: rotate 0.7s, background-color 0.7s, border-color 0.7s;
+}
+
+#bottom-left {
+    bottom: 40px;
+    left: 40px;
+    
+    border: 3px solid rgb(255, 67, 224);
+    box-shadow: 0 0 20px rgb(255, 0, 179);
+    
+    transition: rotate 0.7s, background-color 0.7s, border-color 0.7s;
+}
+
+
+#bottom-right {
+    bottom: 40px;
+    right: 40px;
+    
+    border: 3px solid rgb(0, 151, 13);
+    box-shadow: 0 0 20px rgb(21, 255, 0);
+    transition: rotate 0.7s, background-color 0.7s, border-color 0.7s;
+}
+
+
+#center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 200px;
+    height: 200px;
+    
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    transition: 3s
+}
+
+#top-right:hover {
+    rotate: 45deg;
+    background-color: rgb(71, 0, 151);
+    border-color: blueviolet;
+}
+
+#top-left:hover {
+    rotate: 45deg;
+    background-color: rgb(202, 108, 0);
+    border-color: rgb(255, 153, 0);
+}
+
+#bottom-left:hover {
+    rotate: 45deg;
+    background-color: rgba(202, 0, 0, 0.637);
+    border-color: rgb(255, 0, 0);
+}
+
+#bottom-right:hover {
+    rotate: 45deg;
+    background-color: rgb(0, 247, 255);
+    border-color: rgb(0, 255, 13);
+}
+
+#center:hover {
+    transform: translate(-50%, -50%) rotate(360deg);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
