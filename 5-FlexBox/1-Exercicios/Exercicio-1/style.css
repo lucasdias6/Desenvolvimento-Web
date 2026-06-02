@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+    height: 90vh;
+
+    border: dashed 3px gray;
+    border-radius: 2%;
+}
+
+.bloco {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+    background-color: rgb(75, 0, 71);
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 10%;
+}
+
+.bloco:hover {}
