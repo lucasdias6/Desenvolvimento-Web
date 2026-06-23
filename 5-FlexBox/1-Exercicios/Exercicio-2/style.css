@@ -1,68 +1,94 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E RESET
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(29, 29, 29);
+    background-color: #0f172a; /* Slate 900 */
+    color: #f8fafc;
+
+    display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    
+    padding: 20px;
+    gap: 20px;
 }
 
-.superior{
+/* ==========================================================================
+   1. SEÇÃO SUPERIOR (HEADER)
+   ========================================================================== */
+.superior {
     display: flex;
-    justify-content:space-between;
-    color: white;
-    padding: 10px;
+    justify-content: space-between;
 }
 
-.caixa-top{
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    width: 500px;
-    height: 150px;
-    background-color: rgb(172, 144, 238);
-    border-radius: 2%;
+.caixa-top {
+    width: 30%;
+    height: 120px;
+
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
 }
 
-.central{
+/* ==========================================================================
+   2. SEÇÃO CENTRAL (MAIN)
+   ========================================================================== */
+.central {
+    padding: 10px 0;
+    flex: 1;
     display: flex;
-    justify-content:space-between;
-    color: white;
-    padding: 10px;
+    gap: 25px;
 }
 
-.conteudo-principal{
-    height: 500px;
-    width: 73%;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(0, 87, 128);
-    border-radius: 2%;
+.conteudo-principal {
+    flex: 2;
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
 }
 
-.barra-lateral{
-    width: 25%;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(0, 40, 100);
-    border-radius: 2%;
+.barra-lateral {
+    flex: 1;
+    background: linear-gradient(135deg, #ec4899, #be185d);
 }
 
-.inferior{
+/* ==========================================================================
+   3. SEÇÃO INFERIOR (FOOTER)
+   ========================================================================== */
+.inferior {
     display: flex;
-    justify-content:space-between;
-    color: white;
-    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.caixa-bot{
+.caixa-bot {
+    min-width: 220px;
+    flex: 1;
+    height: 100px;
+    background: linear-gradient(135deg, #10b981, #047857);
+}
+
+/* ==========================================================================
+   4. ESTILIZAÇÃO COMUM E CENTRALIZAÇÃO DO TEXTO
+   ========================================================================== */
+.caixa {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    
+    display: flex;
     justify-content: center;
-    text-align: center;
-    align-content: center;
-    width: 450px;
-    height: 150px;
-    border-radius: 2%;
-    background-color: rgb(0, 70, 128);
+    align-items: center;
+}
+
+.caixa:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
