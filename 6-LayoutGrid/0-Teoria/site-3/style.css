@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tabela {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(3, 250px);
+    gap: 10px;
+}
+
+.lote {
+    background-color: rgb(78, 89, 100);
+}
+
+.lote-1 {
+    grid-column: 1 / span 2;
+}
+

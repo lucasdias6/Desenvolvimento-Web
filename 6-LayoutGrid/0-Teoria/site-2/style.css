@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tabuleiro-xadrez {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    border: 10px solid rgb(45, 37, 114);
+    border-radius: 7px;
+}
+
+.casa {
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.casa:hover {
+    background-color: red;
+    box-shadow: 0 0 30px red;
+    transform: scale(1.05);
+}
+
+.clara {
+    background-color: rgb(93, 182, 255);
+    box-shadow: 0 0 30px rgb(93, 182, 255);
+}
+
+.escura {
+    background-color: rgb(37, 89, 119);
+    box-shadow: 0 0 50px rgb(37, 89, 119);
+}
