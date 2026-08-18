@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    background-color: #0f172a;
+    background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(56, 189, 248, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 60%);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#visor {
+    width: 340px;
+    height: 160px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.2s ease;
+    /* Deixa a troca de cor suave */
+    box-shadow:
+        0 0 25px rgba(148, 163, 184, 0.15),
+        0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    user-select: none;
+}
+
+#visor:hover {
+    transform: scale(1.03);
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    letter-spacing: 0.3px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(1px) scale(0.97);
+}
+
+#btn-liberar {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    box-shadow: 0 4px 14px rgba(34, 197, 94, 0.35);
+}
+
+#btn-liberar:hover {
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.5);
+}
+
+#btn-bloquear {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+    box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35);
+}
+
+#btn-bloquear:hover {
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5);
+}
