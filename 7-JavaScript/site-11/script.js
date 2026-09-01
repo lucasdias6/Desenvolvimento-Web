@@ -18,7 +18,7 @@ btn.addEventListener('click', function(){
 
 tarefa.addEventListener('keydown', function(event) {
     
-    if (tarefa.value != "" & event.key === "Enter") {
+    if (tarefa.value != "" & event.key == "Enter") {
         const novoItem = document.createElement('li');
         novoItem.textContent = tarefa.value
 
