@@ -11,9 +11,9 @@ function normalizarSistema(){
     mensagem.textContent = "Monitorando atividade..."
 }
 
-window.addEventListener('mouseleave', dispararAlarme)
+document.addEventListener('mouseleave', dispararAlarme)
 
-window.addEventListener('mouseenter', normalizarSistema)
+document.addEventListener('mouseenter', normalizarSistema)
 
 window.addEventListener('blur', dispararAlarme)
 
