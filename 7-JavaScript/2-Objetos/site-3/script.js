@@ -9,7 +9,7 @@ const sistema = {
     
     recarregar(){
         this.energia = 100
-        barraEnergia.style.width = '100%'
+        barraEnergia.style.width = this.energia + '%'
     }
 }
 
