@@ -7,12 +7,12 @@ const sistema = {
 
     consumir(){
         this.energia = this.energia - 20
-        barraEnergia.style.widht = this.energia + '%'
+        barraEnergia.style.width = this.energia + '%'
     },
     
     recarregar(){
         this.energia = 100
-        barraEnergia.style.widht = '100%'
+        barraEnergia.style.width = '100%'
     }
 }
 
