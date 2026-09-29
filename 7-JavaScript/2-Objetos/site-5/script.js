@@ -5,7 +5,7 @@ const carteira = {
     comprarChip(){
         if (this.saldo >= 50){
             this.saldo -= 50
-            this.chips += 1
+            this.chips++
             telaSaldo.textContent = this.saldo
             telaChips.textContent = this.chips
         } else {
