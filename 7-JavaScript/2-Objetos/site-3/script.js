@@ -3,7 +3,7 @@ const sistema = {
     energia: 100,
     
     consumir(){
-        this.energia = this.energia - 20
+        this.energia -= 20
         barraEnergia.style.width = this.energia + '%'
     },
     
