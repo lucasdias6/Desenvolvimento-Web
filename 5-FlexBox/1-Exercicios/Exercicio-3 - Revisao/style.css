@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.superior {
+    display: flex;
+    gap: 30px;
+    height: 33%;
+    margin: 15px;
+}
+
+.caixa-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background: linear-gradient(blue,yellow, green);
+    border-radius: 10px;
+}
+
+.meio {
+    display: flex;
+    height: 33%;
+    gap: 30px;
+    margin: 15px;
+}
+
+.caixa-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: linear-gradient(blue,yellow, green );
+    border-radius: 10px;
+}
+
+.inferior {
+    display: flex;
+    height: 33%;
+    margin: 15px;
+}
+
+.caixa-bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(blue,yellow, green );
+    border-radius: 10px;
+}

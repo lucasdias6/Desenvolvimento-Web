@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E RESET
+   ========================================================================== */
+>>>>>>> b009cd6cecaee4460047031e22fff76197dd9f54
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +11,7 @@
 }
 
 body {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -74,4 +81,89 @@ body {
     height: 60px;
     background-color: black;
     color: white;
+=======
+    background-color: #0f172a; /* Slate 900 */
+    color: #f8fafc;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    padding: 20px;
+    gap: 20px;
+}
+
+/* ==========================================================================
+   1. SEÇÃO SUPERIOR (HEADER)
+   ========================================================================== */
+.superior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixa-top {
+    width: 30%;
+    height: 120px;
+
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+/* ==========================================================================
+   2. SEÇÃO CENTRAL (MAIN)
+   ========================================================================== */
+.central {
+    padding: 10px 0;
+    flex: 1;
+    display: flex;
+    gap: 25px;
+}
+
+.conteudo-principal {
+    flex: 2;
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+}
+
+.barra-lateral {
+    flex: 1;
+    background: linear-gradient(135deg, #ec4899, #be185d);
+}
+
+/* ==========================================================================
+   3. SEÇÃO INFERIOR (FOOTER)
+   ========================================================================== */
+.inferior {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.caixa-bot {
+    min-width: 220px;
+    flex: 1;
+    height: 100px;
+    background: linear-gradient(135deg, #10b981, #047857);
+}
+
+/* ==========================================================================
+   4. ESTILIZAÇÃO COMUM E CENTRALIZAÇÃO DO TEXTO
+   ========================================================================== */
+.caixa {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+>>>>>>> b009cd6cecaee4460047031e22fff76197dd9f54
 }
