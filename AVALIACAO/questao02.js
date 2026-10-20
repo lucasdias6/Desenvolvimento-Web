@@ -19,28 +19,26 @@ const valorTemp = document.getElementById('valor-temp');
 const statusTxt = document.getElementById('status-txt');
 
 
-btnCarga.addEventListener('click', function(){
-    sensorTermico.alterarTemperatura(15)
+function atualizarTela(resposta){
     valorTemp.textContent = sensorTermico.temperatura + "°C"
+    statusTxt.textContent = resposta
 
-    if(resposta == "CRÍTICO"){
-        statusTxt.textContent = resposta
+        if(resposta == "CRÍTICO"){
         statusTxt.style.color = 'red'
-    } else {
-        statusTxt.textContent = resposta
+        valorTemp.style.color = 'red'
+        } else {
         statusTxt.style.color = '#10b981'
+        valorTemp.style.color = '#10b981'
     }
+};
+
+
+btnCarga.addEventListener('click', function(){
+    let resposta = sensorTermico.alterarTemperatura(15)
+    atualizarTela(resposta)
 });
 
 btnVento.addEventListener('click', function(){
-    sensorTermico.alterarTemperatura(-15)
-    valorTemp.textContent = sensorTermico.temperatura + "°C"
-
-    if(resposta == "CRÍTICO"){
-        statusTxt.textContent = resposta
-        statusTxt.style.color = 'red'
-    } else {
-        statusTxt.textContent = resposta
-        statusTxt.style.color = '#10b981'
-    }
+    let resposta = sensorTermico.alterarTemperatura(-15)
+    atualizarTela(resposta)
 });
