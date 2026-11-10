@@ -1,7 +1,7 @@
 # 🏫 Escola Elfrida Cristino Silva - Turma 202 (2026)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/euclidespaim/ecs-202?style=for-the-badge)
-![GitHub top language](https://img.shields.io/github/languages/top/euclidespaim/ecs-202?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/lucasdias6/Desenvolvimento-Web?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/lucasdias6/Desenvolvimento-Web?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Em_Andamento-green?style=for-the-badge)
 
 Este repositório contém o material de apoio, exemplos de código e projetos desenvolvidos durante as aulas de **Tecnologia e Desenvolvimento Web** com a turma **202** da Escola Elfrida Cristino Silva no ano de 2026.
